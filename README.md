@@ -123,15 +123,12 @@ Memory trick:  "Oops I ate A PIE"
 
 
 A - Abstraction
-
-
 P - Polymorphism
 I - Inheritance
 E - Encaspulation
 ## #2-React
 **1/ What is React**
 React is a Open Source Frontend Library which is used for buliding user interface specially SPA. It's used for handling view layer for web and mobile
-
 **2/ Major features of React**
 - It uses VirtualDOM instead of RealDOM
 - Support server side rendering
@@ -145,17 +142,13 @@ JSX is XML like systax. It mostly look like HTML. It's used with React to descri
 There is two type of component: Function component and Class component ( they also knows as statefull and stateless component )
 If component needs `state` or `lifecycle` then use class component otherwise use function component
 Pure component will handle `shouldComponentUpdate()` for you
-
 **5/ What is state?**
 State like component data. It's used for internal communication inside 
 it is private and fully controlled by the component
-
 **6/ What is props?**
 Props are input to component. It's naming convention is similar like HTML tag attribute. They are passed down from parent to childrent component.
-
 **7/ What is virtual DOM?**
 Whenever data change, the entire UI is update in virtual DOM. Then the difference between previous DOM and new one is calculated. After that the real DOM only update only the thing that actually updated
-
 **8/ React lifecycle**
 ![alt lifecycle](https://github.com/sudheerj/reactjs-interview-questions/raw/master/images/phases16.3.jpg)
 
@@ -165,7 +158,7 @@ Whenever data change, the entire UI is update in virtual DOM. Then the differenc
 - getSnapshotBeforeUpdate: Executed right before rendered output is committed to the DOM. Any value returned by this will be passed into componentDidUpdate(). This is useful to capture information from the DOM i.e. scroll position.
 - componentDidUpdate: Mostly it is used to update the DOM in response to prop or state changes. This will not fire if shouldComponentUpdate() returns false.
 - componentWillUnmount It will be used to cancel any outgoing network requests, or remove all event listeners associated with the component.
-
+- 
 **9/ Children prop**
 Children is a props `this.props.children` that allow you to pass components as data to another component
 
@@ -181,3 +174,101 @@ Core Principle of Redux:
 - Single source of truth: State of your whole application stored in an object tree with single store. It easy to keep track and debug
 - State is read only: The way to change state is emit an action 
 - Changes are made with pure function: Reducers just pure functions
+
+## #3-Node JS
+**1/ What is Node?**
+Node is a server side scripting which use to build scalable program
+Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+
+**2/ How node works?**
+Node works on V8 enviroment 
+
+## #4-Vue JS
+**1/ What is Vue?**
+Vue is open source javascript framework for building user interface
+
+**2/ Major feature of Vue**
+- Virtual DOM: Similar like React JS
+- Component: We can create reusable custom component like React 
+- Template: Where to define HTML with Vue instance Data
+- Vue Js is lightweight library compare to another
+
+**2/ Vue Lifecycle**
+![alt lifecycle](https://github.com/sudheerj/vuejs-interview-questions/raw/master/images/vuelifecycle.png)
+
+i.Creation( Initialization ): Creation hoooks allow you to perfom action before your component has been added into the DOM. This hook run during server side rendering:
+- a: beforeCeated 
+- b: Created
+ 
+ii.Mounting (DOM insertion): They allow you to access your component immediately before and after first render 
+- a: beforeMounted
+- b: Mounted
+
+iii.Updating(Diff and re-render) Updating hooks are called when your reactive property used by your component change or something else causes it to re-render
+- beforeUpdate
+- updated
+
+iv.Destruction(Teardown) They allow you to perfome action when you component is destroyed
+- beforeDestroy
+- destroyed
+
+
+## #5-My SQL
+**1/ What is SQL?**
+SQL is a open source database management system. It's reliable, fast and easy to use
+
+**2/ technical features of MySQL?**
+- Multithread SQL server
+- Diference backend
+- wild range of programing interface
+- Adminstration tool
+
+**1/ Default port of My SQL?**
+default port is 3306
+
+## #6-Cold Fusion
+Cold fusion is a development framework by Adobe which provive an easy way to connect statics HTML page to database. It completely written in java
+
+**1/ Datatype?**
+Integers - they are used to store whole numbers.
+
+Real Numbers - they are the floating-point numbers.
+
+Strings - They are used to store a sequence of letters, symbols, or characters.
+
+Booleans - They are "true" or "false" values.
+
+Date-time - They are the data or time values.
+
+Lists - It consists of multiple strings separated by a delimiter.
+
+Arrays - It is a complex data-type. Some other types present in Coldfusion are Structure, queries, binary, and object.
+
+**2/ variable scope?**
+Variables - Variables are available only during the execution of the template.
+
+URL - URL variables are available only for the current request.
+
+Form - Form variables are only available for the current request.
+
+CGI - CGI variables are available only for the current request.
+
+Query - The data stored in the pointer are available for the current request.
+
+Server - The server scope is available across all the requests until the server shuts down.
+
+Application - The application variables are used by all the connected clients for current applications.
+
+Session - The session scope is available only to the current session and can persist until the termination of the server or application.
+
+Request - The data in this scope is available to the current request.
+
+Arguments - This scope is mutually exclusive with the local function scope.
+
+Attributes - This scope is available during the lifespan of the custom tag.
+
+Local - This scope is mutually exclusive to the argument scope.
+
+**2/ Aplication.cfm**
+Contain set of codes that we want to execute on every page of aplication 
+Application.cfm file can be used for setting application name, enabling and disabling sessions, Set timeouts, storing client variables, defining application global settings and much more.
