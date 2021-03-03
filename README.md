@@ -269,6 +269,8 @@ Attributes - This scope is available during the lifespan of the custom tag.
 
 Local - This scope is mutually exclusive to the argument scope.
 
+Ref:https://www.quackit.com/coldfusion/tutorial/coldfusion_introduction.cfm
+
 **2/ Aplication.cfm**
 Contain set of codes that we want to execute on every page of aplication 
 Application.cfm file can be used for setting application name, enabling and disabling sessions, Set timeouts, storing client variables, defining application global settings and much more.
