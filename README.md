@@ -181,7 +181,39 @@ Node is a server side scripting which use to build scalable program
 Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
 **2/ How node works?**
-Node works on V8 enviroment 
+Node.js works on a v8 environment, it is a virtual machine that utilizes JavaScript as its scripting language and achieves high output via non-blocking I/O and single threaded event loop.
+
+5) Where can we use node.js?
+
+Node.js can be used for the following purposes.
+
+Web applications ( especially real-time web apps )
+Network applications
+Distributed systems
+General purpose applications
+6) What is the advantage of using node.js?
+
+It provides an easy way to build scalable network programs
+Generally fast
+Great concurrency
+Asynchronous everything
+Almost never blocks
+7) What are the two types of API functions in Node.js ?
+
+The two types of API functions in Node.js are
+
+Asynchronous, non-blocking functions
+Synchronous, blocking functions
+
+10) Why Node.js is single threaded?
+
+For async processing, Node.js was created explicitly as an experiment. It is believed that more performance and scalability can be achieved by doing async processing on a single thread under typical web loads than the typical thread based implementation.
+
+5) What is ‘Callback’ in node.js?
+
+Callback function is used in node.js to deal with multiple requests made to the server. Like if you have a large file which is going to take a long time for a server to read and if you don’t want a server to get engage in reading that large file while dealing with other requests, call back function is used. Call back function allows the server to deal with pending request first and call a function when it is finished.
+
+
 
 ## #4-Vue JS
 **1/ What is Vue?**
@@ -226,6 +258,24 @@ SQL is a open source database management system. It's reliable, fast and easy to
 **1/ Default port of My SQL?**
 default port is 3306
 
+- The SQL SELECT Statement
+The SELECT statement is used to select data from a database.
+
+The data returned is stored in a result table, called the result-set.
+
+- The SQL INSERT INTO Statement
+The INSERT INTO statement is used to insert new records in a table.
+
+- The SQL UPDATE Statement
+The UPDATE statement is used to modify the existing records in a table.
+
+- The SQL DELETE Statement
+The DELETE statement is used to delete existing records in a table.
+
+- SQL INNER JOIN Keyword
+The INNER JOIN keyword selects records that have matching values in both tables.
+
+
 ## #6-Cold Fusion
 Cold fusion is a development framework by Adobe which provive an easy way to connect statics HTML page to database. It completely written in java
 
@@ -268,8 +318,6 @@ Arguments - This scope is mutually exclusive with the local function scope.
 Attributes - This scope is available during the lifespan of the custom tag.
 
 Local - This scope is mutually exclusive to the argument scope.
-
-Ref:https://www.quackit.com/coldfusion/tutorial/coldfusion_introduction.cfm
 
 **2/ Aplication.cfm**
 Contain set of codes that we want to execute on every page of aplication 
