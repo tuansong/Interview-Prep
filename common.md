@@ -28,6 +28,26 @@ Node.js is single-threaded for async processing. By doing async processing on a 
 
 The term I/O is used to describe any program, operation, or device that transfers data from medium to another medium
 
+----
+## #.Vue lifecycle
+i.Creation( Initialization ): Creation hoooks allow you to perfom action before your component has been added into the DOM. This hook run during server side rendering:
+
+a: beforeCeated
+b: Created
+ii.Mounting (DOM insertion): They allow you to access your component immediately before and after first render
+
+a: beforeMounted
+b: Mounted
+iii.Updating(Diff and re-render) Updating hooks are called when your reactive property used by your component change or something else causes it to re-render
+
+beforeUpdate
+updated
+iv.Destruction(Teardown) They allow you to perfome action when you component is destroyed
+
+beforeDestroy
+destroyed
+
+----
 ## #My SQL 
 Is opensource database management system. It's fast and easy to use
 
@@ -39,6 +59,7 @@ UPDATE to update the existing record in the table
 DELETE to delete existing record
 INNER JOIN tot select record that have matching value in both table
 
+----
 ## #Cold Fusion
 ColdFusion is one of the easiest programming environments to use, and enables you to create powerful server-side web applications very quickly, with much less code than other technologies such as ASP, PHP, etc.
 
